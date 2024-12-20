@@ -1,0 +1,54 @@
+body {
+	background-image: url(https://i.ibb.co/VvtLzYj/reddit-not-found.png);
+	font-family:
+		MS Gothic,
+		monospace;
+	color: green;
+	background-color: black;
+	margin:auto;
+	text-align: center;
+	font-size: 20px;
+	height: 100%;
+}
+
+p{
+	padding: 0.5%;
+	text-align: center;
+	align-self: center;
+	background-color: #ffffff;
+}
+
+section .text {
+	margin:auto;
+	position: relative;
+	color: red;
+	font-size: 4.1em;
+	letter-spacing: 3px;
+	word-break:break-word;
+	width: 90%;
+	text-shadow: 0px 3px #ffffff;	
+}
+section .text span {
+	position: relative;
+	display: inline-block;
+	animation: animate 0.4s ease-in-out infinite;
+}
+@keyframes animate {
+	0% {
+		transform: translateX(2px) translateY(2px);
+		color: rgb(255, 0, 0);
+		filter: blur(1px)
+	}
+	33% {
+		transform: translateX(-2px) translateY(2px);
+		color: #500;
+	}
+	66% {
+		transform: translateX(2px) translateY(-2px);
+		color: #f00;
+	}
+	100% {
+		transform: translateX(-2px) translateY(-2px);
+		color: #500;
+	}
+}
